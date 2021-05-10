@@ -1,0 +1,504 @@
+
+
+footer{
+    width: 1440px;
+    height: 114px;
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    font-variant: normal;
+    font-weight: bolder;
+    margin-bottom: 38px;
+    padding: 25;
+    position: absolute;
+    border: 1px;
+    top: 1886px;
+    left: 30px;
+    
+}
+
+  /* Navigation CSS */
+  /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10%;
+  }
+  #navBar h1 {
+    width: 25%;
+    font-weight: 500;
+  }
+  #navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .icons { 
+    display: flex;   
+    height: 42px;
+    width: 42px;
+    margin: 0 10%;
+  }
+  .icons img {
+    cursor: pointer;
+  }
+
+  .icons1 { 
+    display: flex; 
+    margin: 0 10%;  
+  }
+  .icons1 img {
+    cursor: pointer;
+  }
+  .icons_connect{
+    display:flex;
+    cursor: pointer;
+    margin-left:900px;
+  }
+
+  .icons_connect img {
+    display: inline-block;
+    margin-top:8px;
+    cursor: pointer;
+    width:42px;
+    height:42px;
+    align-items: center;
+  }
+
+  .highlight {
+    color: #26ACE2;
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-size: min(max(12px, 4vw), 24px);
+  }
+
+  
+  /* Typography CSS */
+  
+  h2 {
+    font-size: 48px;
+    margin: 0px 0px;
+    color: #26ACE2;
+    font-family: 'Poppins';
+    margin-bottom: 5rem;
+    line-height:1.5; 
+  }
+  
+  p {
+  
+    font-weight: 300;
+    margin: 10px 10px;
+    font-family: 'Josefin Sans';font-size: 24px;
+    line-height:1.5;
+  }
+
+  h4 {
+    font-size: 48px;
+    margin: 0px 0px;
+    color: #e7e7e7;
+    font-family: 'Poppins';
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding:10% 0 ;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .headline {
+    color: #26ACE2;
+    font-weight: 700;
+    margin: 0px 40px;
+    font-family: 'Poppins';font-size: 24px;
+  }
+  /* Category Grid CSS */
+  
+  .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  .heading {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    border-bottom: 5px solid #ff6200;
+  }
+
+  .item1 { 
+    grid-area: LHEADER; 
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10%;
+    justify-content: flex-start;
+    align-items: center;
+   }
+   .item2 { 
+    grid-area: HEADER; 
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10%;
+    justify-content: center;
+    align-items: center;
+   }
+   .item3 { 
+    grid-area: RHEADER; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30%;
+    justify-content:flex-end;
+    align-items: center;
+   }			
+  .item4 { grid-area: LHEROIMG;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }	
+  .item5 { grid-area: HEROIMG;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .item5>img {
+        object-fit: cover;
+        width: 100%
+    }
+  	
+  .item6 { grid-area: RHEROIMG;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }	
+
+  .item7 { grid-area: LHEROtxt; }	
+  .item8 { grid-area: HEROtxt;
+    display:table-cell;
+    vertical-align:middle;
+    justify-content: center;
+    align-items: center;
+}	
+  .item9 { grid-area: RHEROtxt; }	
+  .item10 { grid-area: GD; 
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }		
+  .item11 { grid-area: UI; 
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }	
+  .item12 { grid-area: OS;
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }	
+  .item13 { grid-area: ABT; 
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }		
+  .item14 { 
+      grid-area: FOOTER; 
+      display: flex;
+      flex-direction: row;
+      margin: 0px 43px;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 43px;
+     }
+
+  .grid-container {
+     /*min-height: 500px;*/
+      /*height:1960px ;*/
+
+    
+        margin: 0px -3%;
+        display: grid;	
+        grid-template-areas:	
+        'LHEADER LHEADER HEADER HEADER RHEADER RHEADER'	
+        'LHEROIMG LHEROIMG HEROIMG HEROIMG RHEROIMG RHEROIMG'
+        'LHEROtxt LHEROtxt HEROtxt HEROtxt RHEROtxt RHEROtxt' 
+        'GD GD GD UI UI UI'	
+        'OS OS OS ABT ABT ABT'
+        'FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER';	
+        grid-gap: 10px;	
+        background-color: white;	
+        padding: 10px;	
+        grid-template-columns: 240px 240px 240px 240px 240px 240px;
+        grid-template-rows: auto auto 2fr 2fr 2fr auto ;
+   }
+  
+   .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+   }
+
+
+   .card {
+    /* Add shadows to create the "card" effect */
+    background-color: #26ACE2;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 120px 120px;
+    border: solid #e7e7e7;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+
+  /* FOR UIUX HTML */
+
+.header-container {
+  margin: 0px -3%;
+  display: grid;	
+  grid-template-areas:	
+  'LHEADER LHEADER HEADER HEADER RHEADER RHEADER';
+  grid-gap: 10px;	
+  background-color: white;	
+  padding: 10px;	
+  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 17%;
+  grid-template-rows: auto auto 2fr 2fr 2fr auto ;
+}
+
+h5{
+  font-weight: 500;
+    margin-left:10%;
+    font-family: 'Josefin Sans';font-size: 12px;
+    line-height:1.5;
+}
+
+h1{
+  font-size: min(max(32px, 4vw), 48px);
+    margin-left:10%;
+    margin-top: 12px;
+    justify-content:flex-start;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height:1.5; 
+}
+#hBox{
+    
+    /*margin-left:6%;*/
+    /*margin-top: 12px;*/
+    flex-basis: 50%;
+    min-width: 145px;
+    color: black;
+    
+}
+#hBox >h{
+    /*margin-left:6%;*/
+    margin-top: 12px;
+    justify-content:center;
+    font-size: min(max(22px, 4vw), 48px);
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height:1.2em; 
+}
+#hBox >p{
+  font-weight: 300;
+  justify-content:flex-start;
+  /*margin: 2px 2px;*/
+  padding: 2%;
+  font-family: 'Josefin Sans';
+  font-size: 12px;
+  line-height:1.5;
+}
+
+#hBox2{
+  font-size: min(max(22px, 4vw), 48px);
+  /*margin-left:6%;*/
+  margin-top: 12px;
+  flex-basis: 50%;
+  min-width: 145px;
+  justify-content:flex-start;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 700;
+  line-height:1.5; 
+}
+
+#subhead{
+  margin-left:130px;
+}
+
+.UXskills{
+  display: block;
+  flex-direction: row;
+  width: 1440px;
+  max-width: 1440;
+  min-width: 375px;
+}
+
+.skills{
+  background-color: #F8F8F8;
+  width:100vw;
+  padding: 5%;
+  /*display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:20px;*/
+}
+
+.skillsList{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 6.5%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 975px) {
+  .skillsList {
+    flex-direction: column;
+  }}
+
+.skillBox{
+  background-color: white;
+  width:100vw;
+  padding: 5%;
+}
+
+.skillH{
+    font-size: 48px;
+    margin-top: 115px;
+    justify-content:center;
+    color: black;
+    font-family: 'Poppins';
+    line-height:1.5; 
+}
+.skillBox2{
+  /*background-color: #FFF200;*/
+  float: left;
+  /*padding: 5%;
+  /*margin-left:30px;
+  max-width: 592px ;
+  min-width: 145px ;
+  max-height: 363px;
+  min-height: 89px; */
+  /*justify-content: center;*/
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 35px;
+}
+
+.col-1 {
+  /*width: 50%;*/
+ flex-basis: 591px;
+  /*width: 65vw ;/*
+ /* padding:20px 10%;*/
+  background-color: #FFF200;
+  margin-right: 6.5%;
+  margin-bottom: 10px;
+}
+.col-2 {
+  /*width: 50%;*/
+  flex-basis: 591px;
+  /*width:65vw;*/
+  /*padding:20px 10%;*/
+  background-color: #FFF200;
+  margin-right: 6.5%;
+  margin-bottom: 10px;
+}
+
+.col-3 {
+  
+  flex-basis: 591px;
+  /*flex: 50%;
+  width: 65vw ;*/
+  padding:30px 10%;
+  /*margin-left:130px;*/
+  background-color: #26ACE2;
+  margin-right: 6.5%;
+  margin-bottom: 10px;
+}
+
+
+.col-4 {
+    flex-basis: 591px;
+    /*flex: 50%;
+    width:65vw;
+   /* height:50vh;*/
+    padding:30px 10%;
+    background-color: #26ACE2;
+    margin-right: 6.5%;
+    margin-bottom: 10px;
+  }
+
+  .col-5 {
+    flex-basis: 591px;
+    /*flex: 50%;
+    width: 65vw ;
+    /*height:50vh;*/
+    padding:30px 10%;
+    /*margin-left:130px;*/
+    background-color: #26ACE2;
+    margin-right: 6.5%;
+    margin-bottom: 10px;
+  }
+  
+  
+  .col-6 {
+      flex-basis: 591px;
+      /*flex: 50%;
+      width:65vw;
+      /*height:50vh;*/
+      padding:30px 10%;
+      background-color: #26ACE2;
+      margin-right: 6.5%;
+      margin-bottom: 10px;
+    }
